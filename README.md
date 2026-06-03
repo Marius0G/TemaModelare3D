@@ -22,7 +22,7 @@ This project draws inspiration from two YouTube videos demonstrating mechanical 
 
 The original designs were re-engineered from the ground up in **Autodesk Fusion 360** to create an original, printable product. Key contributions include:
 
-* Redesigning the housing into a **3-part stackable box** with integrated bayonet connectors.
+* Redesigning the housing into a **4-part stackable box** with integrated bayonet connectors.
 * Adding a dedicated **rotating disc** to actuate the iris from the outside.
 * Sizing and tolerancing all components specifically for **FDM 3D printing** (0.2 mm layer height, PETG).
 * Optimizing geometry to minimize support requirements and ensure reliable print-in-place assembly.
@@ -31,7 +31,7 @@ The original designs were re-engineered from the ground up in **Autodesk Fusion 
 ### How It Works
 
 1. The **6 blades** are arranged in a circular overlapping pattern inside the top housing.
-2. Each blade features a **pin** on one end and a **slot** on the other. The pin of each blade rides in a curved guide track, while the slot engages with a drive pin on the rotating disc.
+2. Each blade features a **pin**. The pin of each blade rides in a curved guide track
 3. When the user rotates the **outer disc**, the drive pins push/pull all six blades simultaneously, causing them to pivot and slide — opening or closing the central aperture.
 4. The three body sections (**bottom** → **middle ring** → **top housing**) connect via bayonet-style tabs. You insert one section into the next, then twist clockwise to lock it in place.
 
@@ -44,14 +44,28 @@ The original designs were re-engineered from the ground up in **Autodesk Fusion 
 |`Proiect Modelare 3D - Iris Box.f3d`|Fusion 360 Project|Complete CAD project with all components, sketches, joints, and motion studies|
 |`CutiePrinciapala\_jos.stl` / `.3mf`|STL / 3MF|Bottom section of the box (main storage compartment)|
 |`CutiePrinciapala\_mijloc.stl`|STL|Middle ring section (spacer / extension)|
+|`CutiePrinciapala\_mijloc_2.stl`|STL|Alternate middle ring version (revision / backup)|
 |`CutiePrincipala\_sus.stl`|STL|Top section housing the iris mechanism|
 |`DiscRotire.stl`|STL|Rotating disc that actuates the iris blades|
 |`Dinte.stl`|STL|Single iris blade — **print 6 copies**|
 |`irisbox\_0.2mm\_PETG\_MK3S\_9h45m.gcode`|G-code|Pre-sliced print file for Original Prusa i3 MK3S (PETG, 0.2 mm layer height)|
+|`Proiect Modelare 3D.avi`|Video|Local render/assembly video file (source for YouTube upload)|
+
+### Side cutout:
+![Side cutout of the box](image.png)
+### Connector:
+![Connector](image-1.png)
+### Render:
+![Render](Proiect_Modelare_3D_2026-Jun-03_12-16-27AM-000_CustomizedView14759262011_png.png)
+
 
 \---
 
 ## 3\. Video Showcase
+
+[![Assembly animation on YouTube](https://img.youtube.com/vi/qbRN2XpmCes/0.jpg)](https://youtu.be/qbRN2XpmCes)
+
+Assembly animation: https://youtu.be/qbRN2XpmCes
 
 
 
@@ -132,6 +146,8 @@ The original designs were re-engineered from the ground up in **Autodesk Fusion 
 ### Motion Study
 
 The Fusion 360 project includes a **motion link** between the rotating disc and all 6 blades, allowing you to animate the iris opening and closing by dragging the disc rotation joint.
+
+A **motion study** is included in Fusion 360 to showcase the full open/close cycle of the iris mechanism.
 
 \---
 
